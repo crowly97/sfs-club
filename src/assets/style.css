@@ -176,3 +176,112 @@ footer {
   color: var(--black-mute);
   margin-bottom: 1rem;
 }
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-style: solid;
+  border-color: #721c24;
+  padding: 0.5rem;
+  height: auto;
+  width: auto;
+  font-size: 20px;
+  border-radius: 0.5rem;
+}
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: var(--orange-plain);
+  border: none;
+  color: var(--white-soft);
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  box-shadow: 0 1rem 1rem 0 rgba(var(--orange-plain), 0.5);
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: var(--orange-alt);
+}
+input[type=text], input[type=password] {
+  background-color: var(--white-soft);
+  border: none;
+  color: var(--black-soft);
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5rem;
+  width: 85%;
+  border-radius: 0.5rem;
+}
+input[type=text]:focus {
+  background-color: var(--white-plain);
+}
+input[type=text]::placeholder {
+  color: #cccccc;
+}
+input[type=submit]:active {
+  box-shadow: 0 0 0 0 rgba(var(--orange-soft), 0.5);
+  transform: translateY(0.25rem);
+}
+
+/* Стиль страницы групп */
+.default-content-box {
+  border-radius: 1rem;
+  color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.default-content-list{
+  border: groove;
+  border-radius: 1rem;
+  background-color: var(--white-soft);
+  color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 1rem;
+  /*оно на самом деле работает*/
+  width: -webkit-fill-available;
+  width: -moz-available;
+  margin-top: 0.5rem;
+}
+.default-content-hr {
+  width: 100%;
+  border-color: var(--white-mute);
+  border-top: 0.1rem solid var(--green-alt);
+}
+.default-content-header {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+hr{
+  border: 1px solid var(--green-alt);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*Стиль профиля*/
+.profile-avatar {
+  width: 19rem;
+  height: 14rem;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
+  border: solid 0.2rem var(--black-mute);
+  border-radius: 0.5rem;
+}
+
+.profile-grid {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+}
