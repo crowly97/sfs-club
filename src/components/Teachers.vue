@@ -1,31 +1,64 @@
 <template>
   <div class="layout-content">
-    <h1>Список групп</h1>
+    <div class="student-header-container">
+      <h1>Список тренеров</h1>
+      <div>
+      </div>
+    </div>
     <hr>
-    <div class="alert alert-danger">
-      <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-    </div>
-    <div class="alert alert-success">
-      <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
-    </div>
     <div class="default-content-box">
-      <div class="default-content-list" v-for="teacher in teachers" key="">
-        <h2 class="default-content-header">{{teacher.name}}</h2>
-        <br>
-        <p>Имя: {{teacher.firstname}}</p>
-        <p>Фамилия: {{teacher.lastname}}</p>
-        <p>Возраст: {{teacher.age}}</p>
+      <div class="default-content-list" v-for="value in teachers" key="">
+        <div style="display: flex; justify-content: space-between">
+          <h2 class="default-content-header">{{ value.full_name }}</h2>
+        </div>
         <hr class="default-content-hr">
-        <h3 class="default-content-header">Расписание:</h3>
-        <ul class="group-list" style="margin-top: 0.5rem">
-          <li class="groups-list-item" v-for="schedule in group.schedule" :key="schedule.id">
-            <p>{{schedule.weekday}} {{schedule.begin_time}} - {{schedule.end_time}}</p>
-            <p>Зал: {{schedule.hall_name}}</p>
-          </li>
-        </ul>
+        <p>Возраст: {{value.age}}</p>
+        <p>Пол: {{value.sex}}</p>
+        <p>Ведет группы: {{value.group_name}}</p>
       </div>
     </div>
   </div>
 </template>
-<script setup>
+
+<script>
+  import axios from "axios";
+
+  export default {
+  name: "teachers",
+  data() {
+  return {
+  students: [],
+  full_name: "",
+  username: ""
+}
+},
+  methods: {
+  getTeachers() {
+  axios.get(import.meta.env.VITE_APP_API + "/user/list", {
+  headers: {
+  Authorization: "Bearer " + localStorage.getItem("token")
+}
+}).then(r => {
+  r.data.forEach((element) => {
+  this.reformatStudentsArray(element)
+})
+})
+  .catch(e => console.log(e))
+},
+  reformatTeachersArray(element) {
+  const teacherItem = {
+  full_name: element['full_name'],
+  age: element['age'],
+  sex: element['sex'],
+  group_name: element['group_name'],
+  username: element['username'],
+}
+  this.students.push(teacherItem)
+},
+
+},
+  beforeMount() {
+  this.getStudents()
+}
+}
 </script>
