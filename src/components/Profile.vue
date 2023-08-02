@@ -1,7 +1,7 @@
 <template>
   <div class="layout-content">
     <div class="profile-grid">
-<!--    <img :src="picPath" alt="avatar" class="profile-avatar">-->
+    <img :src="picPath" alt="avatar" class="profile-avatar">
     <div class="profile-info">
       <h1>{{profile[0].full_name}}</h1>
     <hr>

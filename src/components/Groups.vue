@@ -2,12 +2,6 @@
   <div class="layout-content">
     <h1>Список групп</h1>
     <hr>
-    <div class="alert alert-danger">
-      <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-    </div>
-    <div class="alert alert-success">
-      <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
-    </div>
     <div class="default-content-box">
       <div class="default-content-list" v-for="group in groups" key="">
         <h2 class="default-content-header">{{group.name}}</h2>

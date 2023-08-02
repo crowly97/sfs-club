@@ -3,9 +3,6 @@
     <h1 class="auth-title">SFS DanceClub CRM</h1>
     <div id="formContent">
       <form @submit.prevent="login">
-        <div class="alert alert-danger" v-show="error">
-          <strong>Внимание! </strong> {{errors}}
-        </div>
         <input type="text"
                id="login"
                placeholder="login"

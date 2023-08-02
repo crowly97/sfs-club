@@ -1,18 +1,16 @@
 <template>
 <div class="layout-content">
-  <h1>Costumes</h1>
-  <!--TODO тоже дизайн сделать более красивым -->
-<!--  <h1>Список костюмов</h1>-->
-<!--  <hr>-->
-<!--  <div class="default-content-box">-->
-<!--    <div class="default-content-list" v-for="costume in costumes" key="">-->
-<!--      <h2 class="default-content-header">Тип: {{costume.type}}</h2>-->
-<!--      <hr class="default-content-hr">-->
-<!--      <p>Цвет: {{costume.color}}</p>-->
-<!--      <p>Размер: {{costume.clothes_size}}</p>-->
-<!--      <p>Стоимость: {{costume.cost}}</p>-->
-<!--    </div>-->
-  <!--   </div>-->
+  <h1>Список костюмов</h1>
+  <hr>
+  <div class="default-content-box">
+    <div class="default-content-list" v-for="costume in costumes" key="">
+      <h2 class="default-content-header">Тип: {{costume.type}}</h2>
+      <hr class="default-content-hr">
+      <p>Цвет: {{costume.color}}</p>
+      <p>Размер: {{costume.clothes_size}}</p>
+      <p>Стоимость: {{costume.cost}}</p>
+    </div>
+     </div>
 </div>
 </template>
 
