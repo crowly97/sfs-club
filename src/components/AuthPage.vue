@@ -86,7 +86,7 @@ export default {
     if (localStorage.getItem('token'))
       return router.push({name: 'accounting'})
     this.checkStatus()
-    setInterval(this.checkStatus, 10000)
+    setInterval(this.checkStatus, 15000)
   }
 }
 </script>
