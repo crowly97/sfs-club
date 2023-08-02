@@ -178,7 +178,7 @@ footer {
   margin-bottom: 1.2rem;
 }
 .alert-danger {
-  /*TODO вынести в глобальные переменные потом*/
+  /* вынести в глобальные переменные потом*/
   color: #644504;
   background-color: #f8d7da;
   border-style: solid;
