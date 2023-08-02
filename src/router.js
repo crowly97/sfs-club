@@ -4,7 +4,7 @@ import Groups from "@/components/Groups.vue";
 import Concerts from "@/components/Concerts.vue";
 import Costumes from "@/components/Costumes.vue";
 import AuthPage from "@/components/AuthPage.vue";
-import Students from "@/components/Students.vue";
+import Students from "@/components/Dansers.vue";
 import Profile from "@/components/Profile.vue";
 
 const routes = [
