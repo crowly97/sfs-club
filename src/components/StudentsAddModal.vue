@@ -118,6 +118,14 @@ export default {
           group_id: parseInt(this.group),
           username: this.username,
           password: this.password
+        } , {
+          headers: {
+            'Authorization': 'Bearer ' + localStorage.getItem('token')
+          }
+        });
+        if (response.status === 200) {
+          window.location.reload();
+          return this.$emit('close')
         }
       } catch (e) {
         this.errors = e.error
