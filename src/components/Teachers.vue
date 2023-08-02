@@ -34,7 +34,7 @@
 },
   methods: {
   getTeachers() {
-  axios.get(import.meta.env.VITE_APP_API + "/user/list", {
+  axios.get(import.meta.env.VITE_APP_API + "/user/list_teachers", {
   headers: {
   Authorization: "Bearer " + localStorage.getItem("token")
 }
