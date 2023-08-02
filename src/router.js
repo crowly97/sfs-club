@@ -58,8 +58,9 @@ router.beforeEach((to, from, next) => {
     // redirect to login page if not logged in and trying to access a restricted page
     const publicPages = ['/auth'];
     const authRequired = !publicPages.includes(to.path);
-    // пока будет через sessionStorage, потом желательно бы переделать серез локал(?)
+    // лучше переделать, а то не безопасно, но как пока не знаю, поэтому так оставлю
     const token = localStorage.getItem('token');
+    const loggedIn = localStorage.getItem('user');
 
     if (authRequired && !token) {
         return next({
