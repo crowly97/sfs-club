@@ -43,8 +43,8 @@ export default {
   name: "auth-page",
   data() {
     return {
-      username : 'danilov',
-      password : 'pupil',
+      username : '',
+      password : '',
       errors: '',
       error : false,
     };
