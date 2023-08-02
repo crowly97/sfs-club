@@ -7,27 +7,28 @@
   --black-soft: #222222;
   --black-mute: #282828;
 
-  --purple-dark: #6f1d75;
-  --purple-plain: #d729e3;
+  --purple-dark: #530e59;
+  --purple-plain: #a815b4;
   --purple-alt: #e276ee;
-  --purple-soft: #cea0bd;
+  --purple-soft: #f69dd4;
 
-  --pink-dark: #701c46;
-  --pink-plain: #96215c;
-  --pink-alt: #d51777;
-  --pink-soft: #ea5da6;
+  --pink-dark: #540d30;
+  --pink-plain: #882358;
+  --pink-alt: #f31c89;
+  --pink-soft: #ec74af;
 
   --orange-dark: #a85400;
   --orange-plain: #e19036;
 
   font-family: Comic Sans MS, sans-serif;
 }
+<!-- TODO заменить мягкий розовый и его оттенки на уверенный голубой-->
 
 /* Стиль заголовка */
 .logo {
   width: 5rem;
   height: 5rem;
-  margin: 0.5rem;
+  margin: 0.6rem;
 }
 .header{
   background-image: linear-gradient(to right, var(--purple-dark), var(--purple-plain));
@@ -351,4 +352,82 @@ hr{
 .modal-footer {
   display: flex;
   justify-content: space-between;
+}
+
+
+
+.modal-ok-button {
+  background-color: #42b983;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.modal-ok-button:hover {
+  background-color: #3da777;
+}
+
+.modal-cancel-button {
+  background-color: #aaa;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Общая хрень */
+.default-select
+{
+  width: 96%;
+  display: inline-block;
+  text-align: center;
+  height: 3rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--white-soft);
+  z-index: 10;
+}
+
+.default-delete-button {
+  background-color: var(--pink-plain);
+  border: none;
+  color: var(--white-soft);
+  padding: 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: 0 2rem 2rem 0 rgba(var(--black-mute), 0.5);
+  border-radius: 0.5rem;
 }

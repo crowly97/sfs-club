@@ -50,6 +50,9 @@ export default {
     async deleteStudent() {
       try {
         const response = await axios.delete(import.meta.env.VITE_APP_API + "/user/" + this.username, {
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token")
+          }
         });
         if (response.status === 200) {
           this.error = false;
