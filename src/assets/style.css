@@ -7,18 +7,18 @@
   --black-soft: #222222;
   --black-mute: #282828;
 
-  --green-dark: #6f1d75;
-  --green-plain: #d729e3;
-  --green-alt: #e276ee;
-  --green-soft: #cea0bd;
+  --purple-dark: #6f1d75;
+  --purple-plain: #d729e3;
+  --purple-alt: #e276ee;
+  --purple-soft: #cea0bd;
 
-  --orange-dark: #701c46;
-  --orange-plain: #96215c;
-  --orange-alt: #d51777;
-  --orange-soft: #ea5da6;
+  --pink-dark: #701c46;
+  --pink-plain: #96215c;
+  --pink-alt: #d51777;
+  --pink-soft: #ea5da6;
 
-  --red-dark: #a85400;
-  --red-plain: #e19036;
+  --orange-dark: #a85400;
+  --orange-plain: #e19036;
 
   font-family: Calibri, sans-serif;
 }
@@ -30,7 +30,7 @@
   margin: 0.5rem;
 }
 .header{
-  background-image: linear-gradient(to right, var(--green-dark), var(--green-plain));
+  background-image: linear-gradient(to right, var(--purple-dark), var(--purple-plain));
   color: var(--white-plain);
   height: auto;
   width: 100%;
@@ -59,7 +59,7 @@
 /*Стиль кнопок на заголовке*/
 .topnav-links {
   margin-left: 5%;
-  border-color: var(--green-alt);
+  border-color: var(--purple-alt);
   display: inline-block;
 }
 .topnav-links a {
@@ -69,12 +69,12 @@
   font-size: 1.2rem;
   margin-left: 1rem;
   padding: 0.5rem 1rem;
-  border-color: var(--green-alt);
+  border-color: var(--purple-alt);
 }
 .topnav-links a:hover {
-  background-color: var(--orange-plain);
-  color: var(--orange-dark);
-  border-color: var(--orange-plain);
+  background-color: var(--pink-plain);
+  color: var(--pink-dark);
+  border-color: var(--pink-plain);
   border-radius: 0.2rem;
 }
 .topnav-icons {
@@ -91,14 +91,14 @@
   border: none;
 }
 .topnav-icons a:hover, #logOutBtn:hover {
-  color: var(--orange-plain);
+  color: var(--pink-plain);
 }
 #logOutBtn:active, .topnav-icons a:active{
-  color: var(--orange-soft);
+  color: var(--pink-soft);
   transform: translateY(0.2rem);
 }
 .topnav-links a:active {
-  background-color: var(--orange-soft);
+  background-color: var(--pink-soft);
   transform: translateY(0.2rem);
 }
 
@@ -163,7 +163,7 @@ footer {
 }
 #formContent {
   border-radius: 1rem;
-  background-color: var(--green-plain);
+  background-color: var(--purple-plain);
   padding: 2rem;
   max-width: 25rem;
   box-shadow: 0 2rem 2rem 0 rgba(0,0,0,0.3);
@@ -188,7 +188,7 @@ footer {
   border-radius: 0.5rem;
 }
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color: var(--orange-plain);
+  background-color: var(--pink-plain);
   border: none;
   color: var(--white-soft);
   padding: 15px 80px;
@@ -197,12 +197,12 @@ input[type=button], input[type=submit], input[type=reset]  {
   display: inline-block;
   text-transform: uppercase;
   font-size: 13px;
-  box-shadow: 0 1rem 1rem 0 rgba(var(--orange-plain), 0.5);
+  box-shadow: 0 1rem 1rem 0 rgba(var(--pink-plain), 0.5);
   border-radius: 0.5rem;
   margin: 1rem;
 }
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: var(--orange-alt);
+  background-color: var(--pink-alt);
 }
 input[type=text], input[type=password] {
   background-color: var(--white-soft);
@@ -224,7 +224,7 @@ input[type=text]::placeholder {
   color: #cccccc;
 }
 input[type=submit]:active {
-  box-shadow: 0 0 0 0 rgba(var(--orange-soft), 0.5);
+  box-shadow: 0 0 0 0 rgba(var(--pink-soft), 0.5);
   transform: translateY(0.25rem);
 }
 
@@ -255,7 +255,7 @@ input[type=submit]:active {
 .default-content-hr {
   width: 100%;
   border-color: var(--white-mute);
-  border-top: 0.1rem solid var(--green-alt);
+  border-top: 0.1rem solid var(--purple-alt);
 }
 .default-content-header {
   font-size: 1.5rem;
@@ -263,7 +263,7 @@ input[type=submit]:active {
   text-align: left;
 }
 hr{
-  border: 1px solid var(--green-alt);
+  border: 1px solid var(--purple-alt);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -293,7 +293,7 @@ hr{
   margin: 0.5rem;
 }
 #student-list-add {
-  background-color: var(--orange-plain);
+  background-color: var(--pink-plain);
   /*border: solid 0.2rem var(--orange-plain);*/
   border: none;
   color: var(--white-soft);

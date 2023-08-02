@@ -1,23 +1,39 @@
+<!--<template>-->
+<!--&lt;!&ndash;  Как пример можно будет заменить на гифку загрузки &ndash;&gt;-->
+<!--  <div class="layout-content">-->
+<!--    <h1>Учет занятий</h1>-->
+<!--    <hr>-->
+<!--    <div class="default-content-box">-->
+<!--      <div class="default-content-list" v-for="value in accounting" key="">-->
+<!--        <h2 class="default-content-header">Период: {{value.date}}</h2>-->
+<!--        <hr class="default-content-hr">-->
+<!--        <p>Ученик: {{value.name}}</p>-->
+<!--        <p>Количество посещений: {{value.visits}}</p>-->
+<!--        <p>Группа: {{value.group_name}}</p>-->
+<!--        <ul>-->
+<!--          <li>Тип абонемента: {{value.membership}}</li>-->
+<!--          <li>Оплачено: {{value.paid}}</li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</template>-->
+
+<!-- не забыть поменять потом на получше вид-->
 <template>
-<!--  Как пример можно будет заменить на гифку загрузки -->
   <div class="layout-content">
-    <h1>Учет занятий</h1>
-    <hr>
-    <div class="default-content-box">
-      <div class="default-content-list" v-for="value in accounting" key="">
-        <h2 class="default-content-header">Период: {{value.date}}</h2>
-        <hr class="default-content-hr">
-        <p>Ученик: {{value.name}}</p>
-        <p>Количество посещений: {{value.visits}}</p>
-        <p>Группа: {{value.group_name}}</p>
-        <ul>
-          <li>Тип абонемента: {{value.membership}}</li>
-          <li>Оплачено: {{value.paid}}</li>
-        </ul>
-      </div>
-    </div>
+    <h1>Accounting</h1>
   </div>
 </template>
+<script>
+export default {
+  name: "accounting"
+}
+</script>
+
+<style scoped>
+</style>
+
 
 <script>
 import axios from "axios";
