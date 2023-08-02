@@ -5,6 +5,8 @@
         <a class="footer-links-btn" href="https://vk.com/sfsdanceclub"><i class="fa fa-vk"></i></a>
         <a class="footer-links-btn" href="https://www.instagram.com/sfsdanceclub/"><i class="fa fa-instagram"></i></a>
         <a class="footer-links-btn" href="https://www.facebook.com/sfsdanceclub/"><i class="fa fa-facebook-square"></i></a>
+        <a class="footer-links-btn" href="https://www.twitter.com/sfsdanceclub/"><i class="fa fa-twitter"></i></a>
+        <a class="footer-links-btn" href="https://www.ondoklassniki.com/sfsdanceclub/"><i class="fa fa-ondoklassniki"></i></a>
       </div>
       <div class="footer-content-right">
         <a href="https://www.sfsdanceclub.com/">
