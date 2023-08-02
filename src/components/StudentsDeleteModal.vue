@@ -25,3 +25,46 @@
   </div>
 </transition>
 </template>
+<script>
+import axios from "axios";
+
+export default {
+  name: "StudentsDeleteModal",
+  props: {
+    username: {
+      type: String,
+      required: true
+    },
+    full_name: {
+      type: String,
+      required: true
+    }
+  },
+  data() {
+    return {
+      errors: '',
+      error: false,
+    }
+  },
+  methods: {
+    async deleteStudent() {
+      try {
+        const response = await axios.delete(import.meta.env.VITE_APP_API + "/user/" + this.username, {
+        });
+        if (response.status === 200) {
+          this.error = false;
+          this.$emit("close");
+          this.$emit("refresh");
+        }
+      } catch (e) {
+        this.error = true;
+        this.errors = e.response.data.error;
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
