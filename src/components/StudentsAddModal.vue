@@ -83,3 +83,51 @@
   </transition>
 </template>
 <script>
+import axios from "axios";
+
+export default {
+  name: "StudentsAddModal",
+  data() {
+    return {
+      asd: 'asd',
+      error: false,
+      errors: '',
+      last_name: '',
+      first_name: '',
+      second_name: '',
+      age: null,
+      sex: null,
+      begin_date: '',
+      status: null,
+      group: null,
+      username: '',
+      password: '',
+    }
+  },
+  methods: {
+    async addStudent() {
+      try {
+        const response = await axios.post(import.meta.env.VITE_APP_API + '/user/new', {
+          last_name: this.last_name,
+          first_name: this.first_name,
+          second_name: this.second_name,
+          age: parseInt(this.age),
+          sex: parseInt(this.sex),
+          begin_date: this.begin_date,
+          status: parseInt(this.status),
+          group_id: parseInt(this.group),
+          username: this.username,
+          password: this.password
+        }
+      } catch (e) {
+        this.errors = e.error
+        this.error = true
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>

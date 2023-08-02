@@ -20,7 +20,7 @@
   --orange-dark: #a85400;
   --orange-plain: #e19036;
 
-  font-family: Calibri, sans-serif;
+  font-family: Comic Sans MS, sans-serif;
 }
 
 /* Стиль заголовка */
@@ -34,24 +34,24 @@
   color: var(--white-plain);
   height: auto;
   width: 100%;
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 .header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 120%;
 }
 .header-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 .header-title{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   align-items: baseline;
 }
@@ -82,10 +82,10 @@
 }
 .topnav-icons a, #logOutBtn {
   color: var(--white-plain);
-  text-align: center;
+  text-align: right;
   text-decoration: none;
-  font-size: 1.2rem;
-  margin-left: 1rem;
+  font-size: 1.7rem;
+  margin-left: 3rem;
   padding: 0.5rem 1rem;
   background-color: transparent;
   border: none;
@@ -125,8 +125,8 @@ body{
 footer {
   background-color: var(--black-mute);
   color: var(--white-plain);
-  height: auto;
-  width: 100%;
+  height: fit-content;
+  width: 111%;
   position: fixed;
     bottom: 0;
 }
@@ -138,9 +138,9 @@ footer {
   margin: 0.5rem;
 }
 .footer-content-right{
-  align-items: center;
-  margin-right: 1rem;
-  display: flex;
+  align-items: flex-start;
+  margin-right: 2rem;
+  display: table-cell;
 }
 .footer-content-left{
   justify-content: flex-start;
@@ -172,15 +172,16 @@ footer {
 .auth-title {
   font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 648;
   color: var(--black-mute);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 .alert-danger {
-  color: #721c24;
+  /*TODO вынести в глобальные переменные потом*/
+  color: #644504;
   background-color: #f8d7da;
   border-style: solid;
-  border-color: #721c24;
+  border-color: #9f7539;
   padding: 0.5rem;
   height: auto;
   width: auto;
@@ -279,12 +280,13 @@ hr{
   border-radius: 0.5rem;
 }
 
-.profile-grid {
-  display: flex;
-  flex-direction: row-reverse;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 2rem;
-}
+/* Без этого посимпатичнее выглядит */
+/*.profile-grid {*/
+/*  display: flex;*/
+/*  flex-direction: row-reverse;*/
+/*  grid-template-columns: 1fr 2fr;*/
+/*  grid-gap: 2rem;*/
+/*}*/
 /* Стиль списка танцоров */
 .student-header-container {
   display: flex;
@@ -333,12 +335,12 @@ hr{
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Consolas, serif;
 }
 
 .modal-header h3 {
   margin-top: 0;
-  color: #2ac41e;
+  color: #35a944;
 }
 
 .modal-body {
