@@ -9,6 +9,9 @@
       <p>Адрес: {{concert.address}}</p>
       <p>Начало: {{concert.beginning_time}}</p>
       <hr class="default-content-hr">
+      <h3 class="default-content-header">Райдер:</h3>
+      <!-- наверное лишнее, но кто знает-->
+      <p>{{dance.rider}}</p>
       <h3 class="default-content-header">Список танцев:</h3>
       <ul class="group-list" style="margin-top: 0.5rem">
         <li class="groups-list-item" v-for="dance in concert.dances" :key="dance.id">
@@ -56,6 +59,7 @@ export default {
           dance_duration: element["dance_duration"],
           dance_type: element["dance_type"],
           pupil_name: element["pupil_name"],
+          concert_rider:element["concet_rider"],
         }
         let index = this.concerts.findIndex((concert) => concert.id === element["id"])
         this.concerts[index].dances.push(additionConcert)
@@ -72,6 +76,7 @@ export default {
             dance_duration: element["dance_duration"],
             dance_type: element["dance_type"],
             pupil_name: element["pupil_name"],
+            concert_rider:element["concet_rider"],
           }],
         };
         this.concerts.push(unsortedConcert);
